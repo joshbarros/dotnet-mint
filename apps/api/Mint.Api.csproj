@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <ProjectReference Include="../../libs/shared/Mint.Shared.csproj" />
+    <ProjectReference Include="../../libs/identity/Mint.Identity.csproj" />
+    <ProjectReference Include="../../libs/orders/Mint.Orders.csproj" />
+    <ProjectReference Include="../../libs/drops/Mint.Drops.csproj" />
+    <ProjectReference Include="../../libs/certificates/Mint.Certificates.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Mint.IntegrationTests" />
+  </ItemGroup>
+</Project>
